@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detección</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+</head>
+<body>
+
+<style>
+.bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+}
+
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+
+body{
+	 border:        0;
+    margin:        0px;
+    padding:        0px;
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+</style>
+
+<div class="row">
+  
+<div class="container-fluid bg-1 text-center">
+  <div class="col-md-4">
+  <h3>SMART SECURITY</h3>
+  </div>
+
+  <div class="col-md-2 col-md-offset-1">  
+  <br>
+  <img src="imagen1.jpg"  class="img-circle materialboxed" width="50" height="50">
+  </div>
+
+  <div class="col-md-4">
+  <br>
+  <h5>Basada en un sensor de movimiento</h5>
+  </div>
+</div>
+</div>
+
+<!--*******************************************************************************************-->
+<!--ESTILO-->
+<style type="text/css">
+	
+
+#contenido_galeria img  {   float: left; width: 300px;}
+
+</style>
+
+<div id="contenido_galeria" class="container ">
+  
+<script>
+for (var i = 0; i <  data.length ; i++) {
+  document.write("<h1> "+data[i][0] + "</h1>");
+  document.write("<div class='row'>");
+  for (var j = 1; j < data[i].length; j++) {
+    document.write("<img class='materialboxed' width='250' src='");
+    document.write(data[i][j]);
+    document.write("'>");
+    //document.write("<img class='materialboxed' src='imagen1.jpg'>")
+  }
+  document.write("</div>");
+}
+  
+</script>
+</div>
+<!--*********************************************************************************************-->
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+</script>
+
+
+<!--*******************************************************************************************-->
+<!--imagenes grandes-->
+
+
